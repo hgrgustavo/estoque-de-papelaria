@@ -4,6 +4,7 @@ USE `database_estoque_papelaria` ;
 
 CREATE TABLE IF NOT EXISTS `cadastro_livros` (
   `id` INT NOT NULL AUTO_INCREMENT,
+  `titulo` VARCHAR(255) NOT NULL,
   `isbn` VARCHAR(13) NOT NULL,
   `edicao` VARCHAR(255) NOT NULL,
   `editora` VARCHAR(255) NOT NULL,
@@ -43,3 +44,5 @@ CREATE TABLE IF NOT EXISTS `controle_estoque` (
     REFERENCES `cadastro_livros` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
+

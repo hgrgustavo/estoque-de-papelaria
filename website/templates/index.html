@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+	<nav class="navbar"> 
+		<div class="links"> 
+			<a href="{% url 'homepage' %}">home</a> 
+			<a href="{% url 'cadastro_livro' %}">cadastrar livro</a>
+			<a href="{% url 'cadastro_autor' %}">cadastrar autor</a>
+			<a href="{% url 'controle_estoque' %}">controlar estoque</a>
+
+		</div>
+	</nav>
+	{% block content %}
+
+	{% endblock %}
+    </body>
+</html>
+

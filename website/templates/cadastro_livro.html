@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<h1 class="titulo-cadastro">cadastro de <span class="efeito">livro</span></h1>
+<form class="form-cadastro" action="#" method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+
+	<button class="btn" type="submit">cadastrar</button>
+</form>
+
+{% endblock %}
