@@ -24,4 +24,9 @@ urlpatterns = [
     path('cadastrar_livro/', views.CadastroLivro.as_view(), name="cadastro_livro"),
     path('cadastrar_autor/', views.CadastroAutor.as_view(), name="cadastro_autor"),
     path('controle_estoque/', views.ControleEstoque.as_view(), name="controle_estoque"),
-]
+    path('cadastrar_livro/sucesso/', views.SucessoView.as_view(), name="cadastro_livro_sucesso"),
+    path('cadastrar_autor/sucesso/', views.SucessoView.as_view(), name="cadastro_autor_sucesso"),
+    path('controle_estoque/ajax', views.DeleteView.as_view(), name="ajax_delete"),
+
+
+    ]
