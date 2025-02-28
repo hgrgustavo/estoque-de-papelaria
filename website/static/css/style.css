@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+}
+
+.card-cadastro {
+	display: block;
+}
+
+.card-cadastro img {
+	margin: 0;
+	border-radius: 0.55rem;
+	width: 250px;
+	height: 150px;
+}

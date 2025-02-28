@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}>
 </head>
 <body>
+	<nav>
+		<div class="links">
+			<a href="{% url 'indexpage' %}">home</a>
+			<a href="{% url 'cadastrospage' %}">cadastrar</a>
+			<a href="{% url 'estoquepage' %}">controlar estoque</a>
+		</div>
+	</nav> 
+	{% block content %}
+
+	{% endblock %}
     
 </body>
 </html>
