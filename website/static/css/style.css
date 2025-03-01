@@ -1,14 +1,57 @@
 * {
-	margin: 0;
+	margin: 0 auto;
 }
 
-.card-cadastro {
-	display: block;
+body {
+	padding-left: 22%;
+	padding-right: 22%;
+	background: whitesmoke;
 }
 
-.card-cadastro img {
-	margin: 0;
-	border-radius: 0.55rem;
-	width: 250px;
-	height: 150px;
+nav {
+	padding-bottom: 7%;
 }
+
+.form-container {
+	display: flex;
+	align: center;
+	padding-top: 10%;
+	border-radius: 0.5rem;
+	background: white;
+
+}
+
+.form-input {
+	padding-bottom: 4%;
+	
+}
+
+.form-input input {
+	padding-bottom: 10%;
+}
+
+.form-btn-div {
+	padding-top: 6%;
+	padding-bottom: 12%;
+}
+
+.form-btn {
+	padding-bottom: 3%;
+	padding-top: 3%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	position: relative;
+	transform: translateX(70%);
+	border: 0;
+	border-radius: 0.4rem;
+	background: #42b72a;
+	color: white;
+}
+
+.form-btn:hover {
+	background: green;
+}
+
+
+
+

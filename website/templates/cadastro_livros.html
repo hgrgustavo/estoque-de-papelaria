@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="form-container">
+	<form method="post">
+		{% csrf_token %}
+		<div class="form-input">
+			{{ form.título }}
+		</div>
+               	<div class="form-input">
+			{{ form.isbn }}
+		</div>
+		<div class="form-input">
+			{{ form.edição }}
+		</div>
+		<div class="form-input">
+			{{ form.editora }}
+		</div>
+		<div class="form-input">
+			{{ form.ano_publicação }}
+		</div>
+	       	<div class="form-input">
+			{{ form.preço_capa }}
+		</div>
+	       	<div class="form-input">
+			{{ form.categoria }}
+		</div>
+		<div class="form-btn-div">
+			<button class="form-btn" type="sumbit">enviar</button>
+	</div>
+	</form>
+</div>
+{% endblock %}

@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/scripts.js' %}"></script>
 </head>
 <body>
 	<nav>
 		<div class="links">
 			<a href="{% url 'indexpage' %}">home</a>
-			<a href="{% url 'cadastrospage' %}">cadastrar</a>
+			<a href="{% url 'cadastrolivrospage' %}">cadastrar livros</a>
+			<a href="{% url 'cadastroautorespage' %}">cadastrar autores</a>
 			<a href="{% url 'estoquepage' %}">controlar estoque</a>
 		</div>
 	</nav> 
