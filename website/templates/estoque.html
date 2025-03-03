@@ -1,0 +1,49 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+<div class="info-bar">
+  <div class="saldo">
+    <span>Saldo: R${{ saldo }}</span>
+  </div>
+  <div class="quantidade-livro">
+    <span>Livros em estoque: {{ quantidade_livros }}</span>
+  </div>
+</div>
+<div class="table">
+  <table>
+    <caption>LIVROS EM ESTOQUE</caption>
+    <thead>
+      <tr>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">título</th>
+          <th scope="col">isbn</th>
+          <th scope="col">edição</th>
+          <th scope="col">editora</th>
+          <th scope="col">ano de publicação</th>
+          <th scope="col">preço</th>
+          <th scope="col">categoria</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for l in livros %}
+      <tr>
+        <th scope="row">{{ l.id }}</th>
+        <td>{{ l.título }}</<td>
+        <td>{{ l.isbn }}</td> 
+        <td>{{ l.edição }}</td>
+        <td>{{ l.editora }}</td>
+        <td>{{ l.ano_publicação }}</td>
+        <td>{{ l.preço_capa }}</td> 
+        <td>{{ l.categoria }}</td>
+        <td>
+          <button class="delete-button"> 
+            <img class="button-img" src="{% static 'img/bin.png' %}"">
+          </button>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
